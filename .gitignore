@@ -1,0 +1,7 @@
+#*
+.#*
+*~
+_site
+.idea
+*.sw?
+.project

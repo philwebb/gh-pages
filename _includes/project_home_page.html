@@ -1,0 +1,33 @@
+{% capture content %}
+{% include billboard.html %}
+<div class="github-fork-ribbon--container">
+    <div class="github-fork-ribbon--wrapper">
+        <div class="github-fork-ribbon">
+            <a href="{{ site.github_repo_url }}"> <i class="icon icon-github"></i>Fork me on GitHub</a>
+        </div>
+    </div>
+</div>
+
+<div class="project-body--wrapper" id="quick-start">
+    <div class="project-body--container">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span8">
+                    <div class="project-body--section">
+                        {{ main_content | markdownify }}
+                    </div>
+                </div>
+                <div class="span4">
+                    {% include project_sidebar.html %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+
+{% capture end_content %}
+{% include widget_templates.html %}
+{% endcapture %}
+
+{% include page.html %}
